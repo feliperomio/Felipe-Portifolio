@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfólio | Dev C#</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+<header class="hidden">
+
+<div class="logo">Dev C#</div>
+
+<nav>
+<ul>
+<li><a href="#home">Início</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#sobre">Sobre Mim</a></li>
+<li><a href="#projects">Projetos</a></li>
+<li><a href="#contact">Contato</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<section id="home" class="hero">
+
+<img src="perfil1.JPG" alt="Foto de Perfil" class="profile-img hidden">
+
+<h1 class="hidden">
+Olá, eu sou <span style="color:#00ffff">Felipe Romio</span>
+</h1>
+
+<p class="hidden delay-100">
+Desenvolvedor C# Júnior
+</p>
+
+<a href="#contact" class="btn hidden delay-200">
+Entre em Contato
+</a>
+
+</section>
+
+
+<section id="skills" class="section-padding">
+
+<h2 class="section-title hidden">Minhas Tecnologias</h2>
+
+<div class="skills-container hidden">
+
+<div class="skill-tag">C#</div>
+<div class="skill-tag">.NET</div>
+<div class="skill-tag">MySQL</div>
+<div class="skill-tag">Python</div>
+<div class="skill-tag">Java</div>
+<div class="skill-tag">Consumo de APIs</div>
+<div class="skill-tag">Git</div>
+
+</div>
+
+</section>
+
+
+<section id="sobre" class="section-padding">
+
+<h2 class="section-title hidden">Sobre Mim</h2>
+
+<div class="skills-container hidden">
+
+<div>
+
+<p>
+O desenvolvimento de software sempre me chamou atenção, principalmente pela capacidade de transformar ideias em soluções reais através da tecnologia. Desde então, venho me dedicando a estudar programação e aprimorar minhas habilidades na área.
+
+Atualmente curso Análise e Desenvolvimento de Sistemas (ADS), onde continuo aprofundando meus conhecimentos em desenvolvimento de software, boas práticas de programação e criação de aplicações.
+
+Também possuo conhecimento básico em Python, onde já desenvolvi algumas automações simples, além de conhecimento básico em Java. Busco constantemente evoluir através de estudos, projetos práticos e novos desafios na área de tecnologia.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="projects" class="section-padding">
+
+<h2 class="section-title hidden">Projetos Recentes</h2>
+
+<div class="projects-grid">
+
+<div class="project-card hidden">
+
+<h3>Cliente/Servidor com Sockets TCP em C#</h3>
+
+<p>
+Projeto simples de comunicação Cliente/Servidor utilizando Sockets TCP em C#.
+</p>
+
+<div class="project-links">
+<a href="https://github.com/feliperomio/ServerBasico">
+<i class="fab fa-github"></i> Código
+</a>
+</div>
+
+</div>
+
+
+<div class="project-card hidden delay-100">
+
+<h3>Consulta de Endereço por CEP (API ViaCEP)</h3>
+
+<p>
+Projeto em C# (.NET) que consome a API pública ViaCEP para buscar automaticamente os dados de um endereço a partir de um CEP.
+</p>
+
+<div class="project-links">
+<a href="https://github.com/feliperomio/Busca-de-enderecos">
+<i class="fab fa-github"></i> Código
+</a>
+</div>
+
+</div>
+
+
+<div class="project-card hidden delay-200">
+
+<h3>Sistema de Cadastro de Pessoas</h3>
+
+<p>
+Aplicação desktop desenvolvida em C# (Windows Forms) com MySQL, implementando um sistema CRUD para cadastro e gerenciamento de pessoas.
+</p>
+
+<div class="project-links">
+<a href="https://github.com/feliperomio/CRUD-de-Pessoas">
+<i class="fab fa-github"></i> Código
+</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="section-padding contact-section">
+
+<h2 class="section-title hidden">Vamos Conversar?</h2>
+
+<p class="hidden">
+Estou disponível para novos projetos e oportunidades!
+</p>
+
+<div class="social-links hidden">
+
+<a href="https://www.linkedin.com/in/felipe-romio-485868186/" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+
+<a href="https://github.com/feliperomio" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="mailto:feliperomio50@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+<a href="https://wa.me/5554999883288" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Felipe Romio • Desenvolvido com HTML, CSS e .NET</p>
+
+</footer>
+
+
+<script>
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach((entry)=>{
+
+if(entry.isIntersecting){
+entry.target.classList.add("show")
+}
+
+})
+
+})
+
+const hiddenElements = document.querySelectorAll(".hidden")
+
+hiddenElements.forEach((el)=>observer.observe(el))
+
+</script>
+
+</body>
+
+</html>
